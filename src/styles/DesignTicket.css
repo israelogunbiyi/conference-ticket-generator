@@ -55,16 +55,16 @@ left: 1.5rem;
   object-fit: cover;
   border-radius: 0.4rem;
 }
-.ticket-id {
+.ticket-id{
   position: absolute;
   right: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
-
+  top: 2.5rem;
+  bottom: 2.5rem;
   font-size: 2rem;
+  display: flex;
+  flex-direction: column;
   color: hsl(252, 6%, 55%);
 }
-
 @media (max-width: 40rem) {
   .ticket-id{
     top: 0.5rem;
