@@ -91,9 +91,10 @@ function TicketTag({ tag, fileName, formData, git }) {
           <span className="date">{formattedDate} / Ikorodu, Lagos</span>
         )) ||
           (tag === "user" && (
-            <span className="social">
-              <img src={git} />@{formData.email}
-            </span>
+            <div className="social">
+              <img src={git} />
+              <span>@{formData.email}</span>
+            </div>
           ))}
       </div>
     </div>
