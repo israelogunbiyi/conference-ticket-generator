@@ -50,8 +50,8 @@ left: 1.5rem;
   color: hsl(252, 6%, 55%);
 }
 .ticket-thumbnail{
-  width: 3rem;
-  height: auto;
+  width: 3.125rem;
+  height: 3.125rem;
   object-fit: cover;
   border-radius: 0.4rem;
 }
