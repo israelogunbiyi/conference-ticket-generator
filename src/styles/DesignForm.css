@@ -1,0 +1,268 @@
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 2rem 1.5rem 4rem;
+  color: hsl(0, 0%, 100%);
+  background: hsl(248, 70%, 10%) url("../assets/images/background-tablet.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__decor {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.pattern-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.squiggle {
+  position: absolute;
+}
+.squiggle--top-right {
+  top: 3.125rem;
+  right: 0px;
+  width: 31.25rem;
+}
+.squiggle--bottom-left {
+  bottom: 0px;
+  left: -3.125rem;
+  width: 43.75rem;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(50%, -30%);
+  width: 10rem;
+  object-fit: cover;
+  position: absolute;
+}
+
+.hero__content {
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  margin-bottom: 1.5rem;
+}
+
+
+.form-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 27rem;
+  max-width: 100%;
+  text-align: left;
+}
+.form-submit h1 {
+  color: hsl(0, 0%, 100%);
+  max-width: 31.25rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.form-submit p {
+  color: hsl(252, 6%, 83%);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.label-title{
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.image-upload{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+.form-group {
+  width: 27rem;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.label-title {
+  display: block;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 1px solid hsl(252, 6%, 55%);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  outline: none;
+}
+
+.text-input::placeholder {
+  color: hsl(252, 6%, 65%);
+}
+
+.text-input:focus {
+  border-color: hsl(7, 88%, 67%);
+}
+
+.dropzone {
+  display: flex;
+  min-height: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border: 1.5px dashed hsl(252, 6%, 55%);
+  border-radius: 0.75rem;
+  background: hsla(245, 15%, 58%, 0.1);
+  cursor: pointer;
+  text-align: center;
+}
+.dropzone__actions{
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+.remove-btn, .change-btn{
+  background-color: hsl(245, 19%, 35%);
+  color: hsl(252, 6%, 83%);
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  cursor: pointer;
+}
+.dropzone-input {
+  display: none;
+}
+
+.dropzone__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dropzone__icon img {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.6rem;
+  border: 1px solid hsl(252, 6%, 55%);
+  border-radius: 0.6rem;
+  background: hsla(245, 15%, 58%, 0.2);
+}
+
+.dropzone__text {
+  margin: 0;
+  color: hsl(252, 6%, 83%);
+  font-size: 0.9rem;
+}
+
+.form-info {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  color: hsl(252, 6%, 65%);
+  font-size: 0.8rem;
+}
+
+.form-info img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-submit {
+  width: 27rem;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.65rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: hsl(7, 88%, 67%);
+  color: hsl(248, 70%, 10%);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.error-text{
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(7, 71%, 60%);
+}
+
+.error-text span{
+  font-size: 0.7rem;
+}
+@media (max-width: 40rem) {
+  .hero {
+    min-height: 100svh;
+    padding: 1.5rem 1rem 3rem;
+    background-image: url("../assets/images/background-mobile.png");
+    background-attachment: scroll;
+  }
+
+  .hero__content {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .hero__content header {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero__content header img {
+    width: 11rem;
+  }
+
+  .form-submit h1 {
+    max-width: 22rem;
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .form-submit p {
+    max-width: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-group,
+  .btn-submit {
+    width: 100%;
+  }
+
+  .squiggle--top-right {
+    top: 2rem;
+    width: 13rem;
+  }
+
+  .squiggle--bottom-left {
+    left: -2rem;
+    width: 18rem;
+  }
+}
